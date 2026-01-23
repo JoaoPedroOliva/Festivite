@@ -21,6 +21,15 @@
 
   --danger: #ff5959;
 
+  --input-base: #1c1f21;
+  --input-stroke: #363b40;
+  --input-placeholder: #869198;
+
+  --shape-background: #131516;
+  --shape-body: #212427;
+  --shape-button: #2d3136;
+  --shape-hover: #383d42;
+
   --text-body: #c8cdd0;
   --text-heading: #f9f9f9;
 
