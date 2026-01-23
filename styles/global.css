@@ -38,7 +38,16 @@
   --heading-md: 600 1.75rem "Baloo 2";
   --heading-sm: 600 1.25rem "Baloo 2";
 
-  --body-md: 400 1rem "Open Sans";
-  --body-sm: 400 0.875rem "Open Sans";
-  --body-xs: 400 0.75rem "Open Sans";
+  --body-md: 300 1rem "Open Sans";
+  --body-sm: 300 0.875rem "Open Sans";
+  --body-xs: 300 0.75rem "Open Sans";
+}
+
+body {
+  overflow: hidden;
+
+  font: var(--text-body);
+  color: var(--input-base);
+
+  background-color: var(--shape-background);
 }
