@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brand-light: #59b2ff;
+  --brand-mid: #3487cf;
+  --brand-dark: #1d6fb6;
+
+  --purple: #b259ff;
+  --fuschia: #ff59f9;
+  --pink: #ff598b;
+  --orange: #ff8b59;
+  --yellow: #ffcd59;
+  --lime: #e1ff59;
+  --green: #59ff91;
+  --cyan: #59fff9;
+  --navy: #6a59ff;
+
+  --danger: #ff5959;
+
+  --text-body: #c8cdd0;
+  --text-heading: #f9f9f9;
+
+  --logo: 600 2.5rem "Leckerli One";
+
+  --heading-md: 600 1.75rem "Baloo 2";
+  --heading-sm: 600 1.25rem "Baloo 2";
+
+  --body-md: 400 1rem "Open Sans";
+  --body-sm: 400 0.875rem "Open Sans";
+  --body-xs: 400 0.75rem "Open Sans";
+}
