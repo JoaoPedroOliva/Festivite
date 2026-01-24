@@ -30,6 +30,7 @@
                 <legend>Sobre o evento</legend>
               </div>
 
+              <!-- Título do evento -->
               <div class="input-wrapper">
                 <label for="title">Título</label>
                 <input
@@ -40,6 +41,7 @@
                 />
               </div>
 
+              <!-- Data de inicio e Data de fim do evento -->
               <div class="flex">
                 <div class="input-wrapper flex-1">
                   <label for="start-event">Início</label>
@@ -62,6 +64,47 @@
                     placeholder="DD/MM/AAAA, --:--"
                     onfocus="this.type = 'datetime-local'"
                     onblur="if (!this.value) this.type = 'text';"
+                  />
+                </div>
+              </div>
+
+              <!-- Tipo e Local do evento -->
+              <div class="flex">
+                <div class="input-wrapper flex-1">
+                  <label for="type">Tipo</label>
+                  <div class="radio-wrapper">
+                    <div class="radio-inner">
+                      <div class="radio-image presencial"></div>
+                      <input
+                        type="radio"
+                        name="type"
+                        id="presencial"
+                        value="presencial"
+                        checked
+                      />
+                      <label for="presencial">Presencial</label>
+                    </div>
+
+                    <div class="radio-inner">
+                      <div class="radio-image online"></div>
+                      <input
+                        type="radio"
+                        name="type"
+                        id="online"
+                        value="online"
+                      />
+                      <label for="online">Online</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input-wrapper flex-2">
+                  <label for="local">Local</label>
+                  <input
+                    type="text"
+                    id="local"
+                    name="local"
+                    placeholder="Link ou endereço"
                   />
                 </div>
               </div>

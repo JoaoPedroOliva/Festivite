@@ -22,8 +22,4 @@
       color: var(--input-placeholder);
     }
   }
-
-  & button {
-    appearance: none;
-  }
 }
