@@ -4,6 +4,9 @@
 
   height: 100vh;
   overflow: hidden;
+
+  margin: 1.25rem;
+  gap: 1.25rem;
 }
 
 aside {
@@ -33,6 +36,42 @@ aside {
 
   & p {
     font: var(--body-md);
+    color: var(--text-heading);
+  }
+}
+
+main {
+  background-color: var(--shape-body);
+  border-radius: 0.75rem;
+
+  padding: 1.25rem;
+  overflow: auto;
+
+  & .main-container {
+    max-width: 27rem;
+    padding: 5rem;
+    align-items: center;
+  }
+
+  & h2 {
+    font: var(--heading-md);
+    color: var(--text-heading);
+    margin-bottom: 2.5rem;
+  }
+
+  & .header {
+    display: flex;
+    align-items: center;
+  }
+
+  & img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.75rem;
+  }
+
+  & span {
+    font: var(--heading-sm);
     color: var(--text-heading);
   }
 }
