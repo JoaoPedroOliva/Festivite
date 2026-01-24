@@ -1,0 +1,31 @@
+@import url(fields/index.css);
+
+form {
+  gap: 3rem;
+
+  max-width: 35rem;
+}
+
+fieldset {
+  border: none;
+  display: grid;
+
+  width: 100%;
+
+  gap: 1.5rem;
+
+  & .header {
+    align-items: center;
+  }
+
+  & img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.75rem;
+  }
+
+  & legend {
+    font: var(--heading-sm);
+    color: var(--text-heading);
+  }
+}

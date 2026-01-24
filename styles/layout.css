@@ -44,11 +44,12 @@ main {
   background-color: var(--shape-body);
   border-radius: 0.75rem;
 
+  width: 100%;
+
   padding: 1.25rem;
   overflow: auto;
 
   & .main-container {
-    max-width: 27rem;
     padding: 5rem;
     align-items: center;
   }
@@ -57,21 +58,5 @@ main {
     font: var(--heading-md);
     color: var(--text-heading);
     margin-bottom: 2.5rem;
-  }
-
-  & .header {
-    display: flex;
-    align-items: center;
-  }
-
-  & img {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 0.75rem;
-  }
-
-  & span {
-    font: var(--heading-sm);
-    color: var(--text-heading);
   }
 }

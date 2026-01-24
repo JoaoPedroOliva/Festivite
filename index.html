@@ -23,10 +23,50 @@
       <main>
         <div class="main-container">
           <h2>Crie seu convite</h2>
-          <div class="header">
-            <img src="assets/icons/calendar.svg" alt="Calendar Icon" />
-            <span>Sobre o evento</span>
-          </div>
+          <form>
+            <fieldset class="event-info">
+              <div class="header flex">
+                <img src="assets/icons/calendar.svg" alt="Calendar Icon" />
+                <legend>Sobre o evento</legend>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="title">Título</label>
+                <input
+                  type="text"
+                  id="title"
+                  name="title"
+                  placeholder="Nome do evento"
+                />
+              </div>
+
+              <div class="flex">
+                <div class="input-wrapper flex-1">
+                  <label for="start-event">Início</label>
+                  <input
+                    type="text"
+                    id="start-event"
+                    name="start-event"
+                    placeholder="DD/MM/AAAA, --:--"
+                    onfocus="this.type = 'datetime-local'"
+                    onblur="if (!this.value) this.type = 'text';"
+                  />
+                </div>
+
+                <div class="input-wrapper flex-2">
+                  <label for="end-event">Fim</label>
+                  <input
+                    type="text"
+                    id="end-event"
+                    name="end-event"
+                    placeholder="DD/MM/AAAA, --:--"
+                    onfocus="this.type = 'datetime-local'"
+                    onblur="if (!this.value) this.type = 'text';"
+                  />
+                </div>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </main>
     </div>
