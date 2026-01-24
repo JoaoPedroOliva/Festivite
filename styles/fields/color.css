@@ -1,0 +1,87 @@
+.input-wrapper {
+}
+
+.color-wrapper {
+  max-width: 35rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
+}
+
+.color-inner {
+  display: flex;
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  background-color: var(--shape-button);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--shape-hover);
+  }
+}
+
+.color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  & input {
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 100%;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+  }
+}
+
+#brand-light {
+  background-color: var(--brand-light);
+}
+
+#navy {
+  background-color: var(--navy);
+}
+
+#purple {
+  background-color: var(--purple);
+}
+
+#fuschia {
+  background-color: var(--fuschia);
+}
+
+#pink {
+  background-color: var(--pink);
+}
+
+#danger {
+  background-color: var(--danger);
+}
+
+#orange {
+  background-color: var(--orange);
+}
+
+#yellow {
+  background-color: var(--yellow);
+}
+
+#lime {
+  background-color: var(--lime);
+}
+
+#green {
+  background-color: var(--green);
+}
+
+#cyan {
+  background-color: var(--cyan);
+}

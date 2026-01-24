@@ -1,8 +1,8 @@
 @import url(fields/index.css);
 
 form {
+  display: grid;
   gap: 3rem;
-
   max-width: 35rem;
 }
 

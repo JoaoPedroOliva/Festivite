@@ -3,8 +3,8 @@
   gap: 0.75rem;
 
   & label {
-    font: var(--body-sm);
-    color: var(--text-body);
+    font: var(--body-md);
+    color: var(--text-heading);
   }
 
   & textarea {
