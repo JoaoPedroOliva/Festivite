@@ -1,0 +1,22 @@
+.textarea-wrapper {
+  display: grid;
+  gap: 0.75rem;
+
+  & label {
+    font: var(--body-sm);
+    color: var(--text-body);
+  }
+
+  & textarea {
+    background-color: var(--input-base);
+    font: var(--body-md);
+    color: var(--input-placeholder);
+
+    height: 8.5rem;
+    gap: 0.5rem;
+    padding: 1rem;
+
+    border: 1px solid var(--input-stroke);
+    border-radius: 0.5rem;
+  }
+}
