@@ -1,3 +1,5 @@
+@import url(thema.css);
+
 .radio-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));

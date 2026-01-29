@@ -1,6 +1,4 @@
 .color-wrapper {
-  max-width: 35rem;
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
 }
