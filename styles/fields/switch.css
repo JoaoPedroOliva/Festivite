@@ -1,0 +1,56 @@
+.switch-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  & .switch-toggle {
+    background-color: var(--input-base);
+
+    width: 4rem;
+    height: 2rem;
+
+    outline: 1px solid var(--input-stroke);
+    border-radius: 999px;
+
+    position: relative;
+  }
+
+  & .switch-circle {
+    background-color: var(--input-stroke);
+
+    width: 1.5rem;
+    height: 1.5rem;
+
+    border-radius: 999px;
+
+    margin: 0.25rem;
+  }
+
+  & .switch-text::before {
+    font: var(--body-sm);
+    color: var(--text-heading);
+
+    content: "Escuro";
+  }
+
+  & input {
+    all: unset;
+    inset: 0;
+    position: absolute;
+
+    width: 100%;
+  }
+
+  &:has(input:checked) .switch-toggle {
+    background-color: var(--brand-light);
+  }
+
+  &:has(input:checked) .switch-circle {
+    transform: translateX(2rem);
+    background-color: var(--text-heading);
+  }
+
+  &:has(input:checked) .switch-text::before {
+    content: "Claro";
+  }
+}
