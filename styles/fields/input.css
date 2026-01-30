@@ -28,6 +28,33 @@
     &:focus {
       outline: 1px solid var(--brand-light);
     }
+
+    &:invalid {
+      border: 1px solid var(--danger);
+    }
+
+    &[required] + .error {
+      gap: 0.5rem;
+
+      display: flex;
+      align-items: center;
+
+      & img {
+        width: 1rem;
+        height: 1rem;
+
+        margin: 0;
+      }
+
+      & span {
+        font: var(--body-xs);
+        color: var(--danger);
+      }
+    }
+
+    &:valid + .error {
+      display: none;
+    }
   }
 
   /* Ensure datetime-local renders with same metrics */
