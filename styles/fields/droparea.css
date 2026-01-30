@@ -1,0 +1,54 @@
+.droparea-wrapper {
+  display: grid;
+  gap: 0.75rem;
+
+  & label {
+    font: var(--body-md);
+    color: var(--text-heading);
+  }
+}
+
+.dropzone {
+  gap: 0.75rem;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  & .button-file {
+    display: flex;
+    align-items: center;
+
+    background-color: var(--shape-button);
+
+    border-radius: 0.5rem;
+
+    height: 2.5rem;
+    padding: 0.75rem;
+
+    & img {
+      width: 1rem;
+      height: 1rem;
+    }
+
+    & span {
+      font: var(--body-sm);
+      font-weight: 600;
+      color: var(--text-heading);
+    }
+  }
+
+  & .text-file::before {
+    font: var(--body-md);
+    color: var(--input-placeholder);
+    content: "Nenhum arquivo selecionado";
+  }
+
+  & input {
+    all: unset;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+  }
+}

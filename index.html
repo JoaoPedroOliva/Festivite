@@ -372,14 +372,27 @@
 
               <!-- Estilo do convite -->
               <div class="flex">
-                <div class="input-wrapper flex-1">
+                <div class="switch-wrapper flex-1">
                   <label for="style">Estilo</label>
-                  <div class="switch-wrapper">
+                  <div class="switch-inner">
                     <div class="switch-toggle">
                       <div class="switch-circle"></div>
                       <input type="checkbox" name="style" id="style" />
                     </div>
                     <div class="switch-text"></div>
+                  </div>
+                </div>
+
+                <!-- Foto da Capa -->
+                <div class="droparea-wrapper flex-2">
+                  <label for="cover">Foto de capa</label>
+                  <div class="dropzone">
+                    <div class="button-file">
+                      <img src="assets/icons/upload.svg" alt="Upload da Capa" />
+                      <span>Selecionar</span>
+                    </div>
+                    <input type="file" name="cover" id="cover" />
+                    <div class="text-file"></div>
                   </div>
                 </div>
               </div>
